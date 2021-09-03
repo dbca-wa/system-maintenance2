@@ -1,7 +1,18 @@
 .topmast {
     height: 115px;
     padding-top: 0px;
+    background: #FFFFFF;
+    z-index: 30;
+    position: relative;
+}
+
+
+.topmastold {
+    height: 115px;
+    padding-top: 0px;
     background: #3580ca url(/static/ps/img/top-bg-grasses.gif) repeat-x center bottom;
+    z-index: 1000;
+    position: relative;
 }
 
 @media (max-width: 992px) {

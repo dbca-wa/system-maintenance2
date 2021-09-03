@@ -12,14 +12,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
-        <link type="text/css" href="/static/ps/css/base.css" rel="stylesheet"/>
+        <link type="text/css" href="/static/ps/css/base.css?ver=1" rel="stylesheet"/>
         
     
     <link href="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet"/>
     <link href="//cdnjs.cloudflare.com/ajax/libs/select2/3.5.3/select2.min.css" rel="stylesheet"/>
     <link href="//cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-css/1.4.6/select2-bootstrap.min.css" rel="stylesheet"/>
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="/static/ps/css/dashboard.css">
+    <link rel="stylesheet" href="/static/ps/css/dashboard.css?ver=1">
 
     <style >
         [v-cloak]{
@@ -36,20 +36,37 @@
         </title>
     </head>
     <body>
-        <header class="topmast">
+
+    
+        <div class="topmast" >
         
-        
+<style>
+
+.text-warning { 
+    color: white;
+    font-size: 3rem;
+    line-height: 1.04348;
+    text-shadow: 2px 2px 6px black;
+    text-align: center !important;
+    font-weight: 100; 
+    position: relative;
+}
+
+</style>
 
 
-<div class="">
+<div class="topmast" style='z-index: 21;'>
     <div class="container">
-        <div class="masthead">
+        <div class="masthead" >
             <div class="row">
                 <div class="col-lg-8">
                     <div class="agency-freespace">
                         <h1 id="site-title" class="site-logo">
                            <a href="/">
-                              <img src="/static/ps/img/logo-park-stay.gif" alt="Department of Parks and Wildlife - Park Stay" class="img-responsive"/>
+
+
+			      <img src="/images/parks_wildlife.logo.png" alt="Department of Parks and Wildlife - Park Stay" class="img-responsive"/>
+
                            </a>
                         </h1>
                     </div>
@@ -60,69 +77,47 @@
 </div>
 
         
-        </header>
+        </div>
 
 
-<div id="menu" class="topbar row">
-	 <div class="container-fluid">
-		  <nav class="navbar navbar-default">
+<div id="menu" class="topbar irow" style='z-index: 12; position: relative;'>
+	 <div class="iicontainer-fluid">
+		  <div class="inavbar navbar-default" style='margin-bottom: 0px; background-color: #333333; border-top: 1px solid #000000; border-bottom: 1px solid #000000; min-height: 50px;'>
 			    <div class="container">
 				
-         <div class="navbar-header">
-
-         &nbsp;
- 	 </div>
-    </div>
-   </div>
+                                <div class="navbar-header">
+                                      &nbsp;
+                                </div>
+           </div>
+	    </div>
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 
 
 
         
-            <div class="container">
+            <div style='z-index: 11;position: relative; width:100px;' >
+		    <div style='position: fixed; width: 100%; top: 30%; z-index: 12;'>
+     		         <div style='position: absolute; width: 100%; top: 30%; z-index: 32; padding: 10px;'> <div class='text-warning'>We are currently experiencing extremely high demand for campsite bookings. Please try again later.</div></div>
+	            </div>
+		    <div style='position: fixed; width: 100%; top: 30%; z-index: 11;'>
+			     <img src="/images/cg_image.jpg" style='margin-top: -400px; z-index: 11; filter: brightness(90%); position: relative; min-width: 100%'>
+
+			     <!-- IMAGE -->
+		    </div>
+                    
                 <div class="row">
                     <div class="col-md-12">
               
 &nbsp;
 
-            <div class="alert alert-info">
-		     <table style="width: 100%;background-color: none; border: none; background: none;" cellspacing="0" cellpadding="0">
-			      <tbody style="background-color: none; border: none; background: none;">
-				       <tr>
-					        <td valign="top">
-							 <img src="/images/warning_blue.png">
-						</td>
-						<td>
-							 High Traffic Warning,  we are experiencing high than normal traffic please try again later.
-				                </td>
-				       </tr>
-			       </tbody>
-		      </table>
-		                                                                  </div>
 
 
                     </div>
                 </div>
             </div>
+	    </div> 
         
-        
-    <div class="container" id="dashboard-table-container">
-        
-
-
-    </div>
-
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108679294-1"></script>
         <script>
